@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fermitensor"
+version = "0.0.1"
+description = "Python package for fermionic tensor networks"
+readme = "README.rst"
+authors = [{ name = "Christian B. Mendl", email="christian.b.mendl@gmail.com" }]
+license = { text = "Apache-2.0" }
+requires-python = ">=3.6"
+dependencies = [
+    "numpy",
+    "scipy",
+]
+
+[project.urls]
+Homepage = "https://github.com/cmendl/fermionic_tensor_networks"
+
+[tool.setuptools.packages.find]
+where = ["src"]
